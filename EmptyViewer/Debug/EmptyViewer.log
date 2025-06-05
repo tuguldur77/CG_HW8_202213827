@@ -1,2 +1,11 @@
-﻿  Main_EmptyViewer.cpp
+﻿  frame_timer.cpp
+  load_mesh.cpp
+C:\Users\tugul\Downloads\CG_HW8_202213827\EmptyViewer\load_mesh.cpp(108,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\tugul\Downloads\CG_HW8_202213827\EmptyViewer\load_mesh.cpp(109,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\tugul\Downloads\CG_HW8_202213827\EmptyViewer\load_mesh.cpp(110,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\tugul\Downloads\CG_HW8_202213827\EmptyViewer\load_mesh.cpp(124,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\tugul\Downloads\CG_HW8_202213827\EmptyViewer\load_mesh.cpp(125,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\tugul\Downloads\CG_HW8_202213827\EmptyViewer\load_mesh.cpp(126,12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Main_EmptyViewer.cpp
+  Generating Code...
   EmptyViewer.vcxproj -> C:\Users\tugul\Downloads\CG_HW8_202213827\bin\EmptyViewer.exe

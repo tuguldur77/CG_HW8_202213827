@@ -18,10 +18,10 @@
     <ClCompile Include="Main_EmptyViewer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\load_mesh.cpp">
+    <ClCompile Include="frame_timer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\frame_timer.cpp">
+    <ClCompile Include="load_mesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
