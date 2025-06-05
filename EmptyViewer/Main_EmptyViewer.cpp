@@ -94,17 +94,17 @@ void display() {
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    gluLookAt(0, 0, 0, 0, 0, -1, 0, 1, 0);
+	gluLookAt(0, 0, 0, 0, 0, -1, 0, 1, 0); // Camera at origin, looking down -Z axis
 
-    // ✅ Light direction setup in camera space
-    GLfloat light_position[] = { 1.0f, 1.0f, 1.0f, 0.0f }; // Directional
+	GLfloat light_position[] = { 1.0f, 1.0f, 1.0f, 0.0f };  // specified with w=0
     float len = sqrtf(3.0f);
     for (int i = 0; i < 3; ++i) light_position[i] /= len;
     glLightfv(GL_LIGHT0, GL_POSITION, light_position);
 
-    glTranslatef(0.1f, -1.0f, -1.5f);
-    glScalef(10.0f, 10.0f, 10.0f);
+    glTranslatef(0.1f, -1.0f, -1.5f); 
+	glScalef(10.0f, 10.0f, 10.0f);
 
+	// Render the bunny mesh with glVertex3f and glNormal3f in immediate mode
     if (gRenderMode == IMMEDIATE_MODE) {
         glBegin(GL_TRIANGLES);
         for (size_t i = 0; i < gTriangles.size(); ++i) {
@@ -143,6 +143,7 @@ void display() {
     glutPostRedisplay();
 }
 
+// Keyboard callback to switch between rendering modes
 void keyboard(unsigned char key, int x, int y) {
     switch (key) {
     case '1':
